@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.converter {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+
+    padding: 13px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #667eea;
+
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    background: #667eea;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5568d9;
+
+    transform: translateY(-2px);
+}
+
+#errorMessage {
+    color: #d93025;
+
+    font-size: 14px;
+
+    margin-top: 6px;
+
+    min-height: 18px;
+}
+
+.results {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #ddd;
+}
+
+.results h2 {
+    font-size: 20px;
+
+    color: #333;
+
+    margin-bottom: 15px;
+}
+
+.result-box {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #f5f6fa;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+}
+
+.result-box span {
+    color: #555;
+
+    font-weight: 500;
+}
+
+.result-box strong {
+    color: #333;
+}
+
+@media (max-width: 500px) {
+
+    .converter {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+}
